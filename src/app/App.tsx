@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ArrowRight, Mail, Menu, X, ArrowUpRight } from "lucide-react";
 import { gsap } from "gsap";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── PALETTE (minimal, neutral, premium) ───────────────────────────────────────
 // Brand:  one restrained pink used sparingly for CTAs and tiny accents
@@ -1076,7 +1077,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ────────────────────────────────────────────────── */}
+      {/* ── TESTIMONIALS ──────────────────────────────────────────────���─── */}
       <section className="py-24 px-6" style={{ background: SOFT }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-10">
@@ -1255,6 +1256,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
